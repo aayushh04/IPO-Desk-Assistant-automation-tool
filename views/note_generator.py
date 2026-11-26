@@ -171,7 +171,7 @@ with setup:
                 st.caption(f"Offline demo answers. {len(TASKS)} tasks, only the first pages of each section are sent.")
             else:
                 client = LLMClient(cfg)
-                st.caption(f"{cfg.provider} · {cfg.model} · API key {'found' if key_ok else 'missing: add it to .env or Streamlit secrets'}. "
+                st.caption(f"{cfg.provider} · {cfg.model} · API key {'found' if key_ok else 'missing: add GEMINI_API_KEY (free from Google AI Studio) or another key to .env or Streamlit secrets'}. "
                            f"{len(TASKS)} tasks; results are cached per file, so re-running is free.")
         run = e2.button("Run AI extraction", type="primary", disabled=not (demo or key_ok), width="stretch")
         if run:

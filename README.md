@@ -116,13 +116,13 @@ Tested on a real 729-page RHP: a correct revenue figure → *ok*; a real number 
 py -3.11 -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
-copy .env.example .env          # paste ONE API key into .env (optional: the sample RHP works offline)
+copy .env.example .env          # paste ONE API key (GEMINI_API_KEY is free); the sample RHP also works offline
 python -m ipodesk.sample_data   # writes sample CSVs + a fake RHP PDF to data\sample\
-pytest                          # 70 tests
+pytest                          # 79 tests
 streamlit run Home.py
 ```
 
-Choose the LLM in `config/settings.yaml` (`provider: anthropic | openai | fake`). Check a key with `python -m ipodesk.llm`.
+**Free AI option:** create a Gemini API key at Google AI Studio (aistudio.google.com) and set `GEMINI_API_KEY`. The default `provider: auto` in `config/settings.yaml` uses whichever key is set (Anthropic, OpenAI or Gemini). The free tier is rate-limited (reported at roughly 5 requests a minute and 20 a day on Flash; one note uses 8), so the app waits and retries when it hits the per-minute limit, and switches to a lighter fallback model (`fallback_models` in settings.yaml) when the main one is overloaded. Check a key with `python -m ipodesk.llm`.
 
 **Try it with a real RHP:** SEBI website → Filings → Public Issues → pick an "RHP" → download the PDF → upload
 it on the Note Generator page and enter the price band, lot size and dates from the price band advertisement.
@@ -138,7 +138,7 @@ ipodesk/                         pdf_extract, sections, llm, schemas, extraction
                                  valuation, red_flags, calendar, messages, subscription, exports,
                                  formatting, config, sample_data
 config/                          settings.yaml (LLM, thresholds, banned words), holidays.yaml
-tests/                           70 pytest tests incl. known-answer tests and headless page tests
+tests/                           79 pytest tests incl. known-answer tests and headless page tests
 PRODUCT.md                       product facts that guide design decisions
 ```
 
@@ -161,7 +161,7 @@ git push -u origin main
 ### 2. Deploy on Streamlit Community Cloud (free)
 1. Go to share.streamlit.io and sign in with GitHub.
 2. **Create app** → pick the repository, branch `main`, main file **`Home.py`**.
-3. **Advanced settings** → Python **3.11** → in **Secrets** paste `ANTHROPIC_API_KEY = "sk-ant-..."` (or `OPENAI_API_KEY`).
+3. **Advanced settings** → Python **3.11** → in **Secrets** paste `GEMINI_API_KEY = "..."` (free) or `ANTHROPIC_API_KEY = "sk-ant-..."`. Leave it empty to run the sample RHP on offline demo answers.
 4. **Deploy**. The first build installs `requirements.txt` (a few minutes). Every `git push` redeploys.
 
 ### 3. Finish the README
