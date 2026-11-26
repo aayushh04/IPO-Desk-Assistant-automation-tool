@@ -7,7 +7,7 @@ alerts; and tracks category-wise subscription.
 > **For information only. Not a recommendation. Read the RHP before investing.**
 > All client data in this project is synthetic.
 
-**Live app:** `https://<your-app-name>.streamlit.app` *(add after deploying; see [Deployment](#deployment))*
+**Live app:** https://aayushh04-ipo-desk-assistant-automation-tool-home-sys0c1.streamlit.app/
 
 | IPO Note Generator | IPO Calendar | Subscription Tracker |
 |---|---|---|
