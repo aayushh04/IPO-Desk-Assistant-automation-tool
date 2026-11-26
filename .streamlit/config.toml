@@ -1,0 +1,49 @@
+[server]
+maxUploadSize = 200          # MB; real RHPs are usually 5-30 MB
+enableStaticServing = true   # serves ./static at /app/static (self-hosted fonts)
+
+[client]
+toolbarMode = "viewer"
+
+# "Working Papers" theme: an auditor's schedule. Graphite shell, grey-green ground, near-white sheets,
+# green pencil ticks, red pencil queries, cross-reference blue as the only action colour.
+[theme]
+base = "light"
+primaryColor = "#1E4E8C"
+backgroundColor = "#EEF2EC"
+secondaryBackgroundColor = "#E3E9E0"
+textColor = "#2B2F2A"
+linkColor = "#1E4E8C"
+borderColor = "#CFD8CC"
+showWidgetBorder = true
+baseRadius = "small"
+buttonRadius = "small"
+font = "Public Sans"
+headingFont = "Public Sans"
+codeFont = "JetBrains Mono"
+baseFontSize = 15
+chartCategoricalColors = ["#1E4E8C", "#7A5C2E", "#B08A3E", "#2E7D32", "#8E5A9C", "#2B2F2A"]
+
+[[theme.fontFaces]]
+family = "Public Sans"
+url = "app/static/fonts/public-sans-latin.woff2"
+weight = "100 900"
+unicodeRange = "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+
+[[theme.fontFaces]]
+family = "Public Sans"
+url = "app/static/fonts/public-sans-latin-ext.woff2"
+weight = "100 900"
+unicodeRange = "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF"
+
+[[theme.fontFaces]]
+family = "JetBrains Mono"
+url = "app/static/fonts/jetbrains-mono-latin.woff2"
+weight = "100 800"
+unicodeRange = "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+
+[[theme.fontFaces]]
+family = "JetBrains Mono"
+url = "app/static/fonts/jetbrains-mono-latin-ext.woff2"
+weight = "100 800"
+unicodeRange = "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF"

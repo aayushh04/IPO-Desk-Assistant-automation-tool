@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Secrets - never commit these
+.env
+.streamlit/secrets.toml
+
+# Local caches and generated files
+.cache/
+data/uploads/
+data/sample/*.pdf
+exports/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Claude Code personal settings
+.claude/settings.local.json

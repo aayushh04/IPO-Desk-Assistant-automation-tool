@@ -1,0 +1,29 @@
+# Central settings. Change the LLM provider/model here; keys come from .env or Streamlit secrets.
+llm:
+  provider: anthropic        # anthropic | openai | fake (fake = offline canned answers, for tests/demo)
+  models:
+    anthropic: claude-sonnet-5-5
+    openai: gpt-4.1-mini
+  temperature: 0.0           # 0 = most repeatable output; we want facts, not creativity
+  max_tokens: 4000
+  max_retries: 2             # retries when the model returns invalid JSON
+
+compliance:
+  disclaimer: "For information only. Not a recommendation. Read the RHP before investing."
+  banned_phrases: [subscribe, avoid, buy, sell, "grey market", gmp, "listing gain", "multibagger", "guaranteed"]
+
+red_flags:
+  ofs_share_max_pct: 50            # OFS above this % of the issue is flagged
+  pe_vs_peer_median_max: 1.5       # P/E above 1.5x the peer median is flagged
+  negative_ocf_years: 2            # negative operating cash flow in >= 2 of last 3 years
+  rpt_pct_of_revenue_max: 10       # related-party transactions above this % of revenue
+  litigation_pct_of_networth_max: 10
+  gcp_legal_limit_pct: 25          # SEBI ICDR: general corporate purposes <= 25% of gross fresh-issue proceeds
+  gcp_warning_margin_pct: 5        # flag if GCP is within 5 points of the limit (i.e. >= 20%)
+
+calendar:
+  holidays_file: config/holidays.yaml
+  mandate_cutoff_time: "5:00 pm"   # UPI mandate must be approved by this time on the issue close day
+
+alerts:
+  demo_mode: true                  # when true, messages can only go to TEST channels

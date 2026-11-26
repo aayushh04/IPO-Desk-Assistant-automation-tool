@@ -1,0 +1,540 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-26T15:20:49+00:00",
+  "title": "Design System: IPO Desk Assistant",
+  "extensions": {
+    "colorMeta": {
+      "graphite-ink": {
+        "role": "neutral",
+        "displayName": "Graphite Ink",
+        "canonical": "#2B2F2A",
+        "tonalRamp": [
+          "#090C09",
+          "#232622",
+          "#3F433E",
+          "#5F625E",
+          "#80837F",
+          "#A3A6A3",
+          "#C8CAC7",
+          "#EDEFED"
+        ]
+      },
+      "graphite-muted": {
+        "role": "neutral",
+        "displayName": "Graphite Muted",
+        "canonical": "#5B6458",
+        "tonalRamp": [
+          "#080D07",
+          "#21271F",
+          "#3D453B",
+          "#5B6458",
+          "#7D857A",
+          "#A0A89E",
+          "#C5CBC3",
+          "#EBF0E9"
+        ]
+      },
+      "analysis-ground": {
+        "role": "neutral",
+        "displayName": "Analysis Ground",
+        "canonical": "#EEF2EC",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#252524",
+          "#414241",
+          "#60625F",
+          "#818380",
+          "#A3A6A2",
+          "#C7CAC5",
+          "#ECF0EA"
+        ]
+      },
+      "sheet-paper": {
+        "role": "neutral",
+        "displayName": "Sheet Paper",
+        "canonical": "#FBFCFA",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424241",
+          "#616160",
+          "#828281",
+          "#A4A5A4",
+          "#C8C9C8",
+          "#EEEFED"
+        ]
+      },
+      "blank-white": {
+        "role": "neutral",
+        "displayName": "Blank White",
+        "canonical": "#FFFFFF",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "sage-hairline": {
+        "role": "neutral",
+        "displayName": "Sage Hairline",
+        "canonical": "#CFD8CC",
+        "tonalRamp": [
+          "#0A0C0A",
+          "#242623",
+          "#40433F",
+          "#5E635D",
+          "#7F847D",
+          "#A0A79E",
+          "#C4CCC1",
+          "#E9F1E6"
+        ]
+      },
+      "sage-row-rule": {
+        "role": "neutral",
+        "displayName": "Sage Row Rule",
+        "canonical": "#E1E7DF",
+        "tonalRamp": [
+          "#0A0B0A",
+          "#242524",
+          "#414340",
+          "#5F625E",
+          "#80837F",
+          "#A2A6A1",
+          "#C6CBC4",
+          "#EBF0E9"
+        ]
+      },
+      "sage-wash": {
+        "role": "neutral",
+        "displayName": "Sage Wash",
+        "canonical": "#E3E9E0",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#242524",
+          "#414340",
+          "#5F625E",
+          "#80847E",
+          "#A2A7A0",
+          "#C6CBC3",
+          "#EBF1E8"
+        ]
+      },
+      "signoff-dash": {
+        "role": "neutral",
+        "displayName": "Signoff Dash",
+        "canonical": "#9AA796",
+        "tonalRamp": [
+          "#090C08",
+          "#222720",
+          "#3D443B",
+          "#5B6459",
+          "#7B8678",
+          "#9DAA99",
+          "#C2CDBE",
+          "#E8F2E5"
+        ]
+      },
+      "shell-text": {
+        "role": "neutral",
+        "displayName": "Shell Text",
+        "canonical": "#C9D2C6",
+        "tonalRamp": [
+          "#0A0C0A",
+          "#232623",
+          "#40433F",
+          "#5E635D",
+          "#7E847C",
+          "#A0A89E",
+          "#C3CCC0",
+          "#E9F1E6"
+        ]
+      },
+      "shell-active": {
+        "role": "neutral",
+        "displayName": "Shell Active",
+        "canonical": "#3D4339",
+        "tonalRamp": [
+          "#090C07",
+          "#22271F",
+          "#3E443A",
+          "#5E635A",
+          "#7F847C",
+          "#A2A79F",
+          "#C7CAC4",
+          "#EDEFEB"
+        ]
+      },
+      "pencil-green": {
+        "role": "secondary",
+        "displayName": "Pencil Green",
+        "canonical": "#2E7D32",
+        "tonalRamp": [
+          "#001200",
+          "#003000",
+          "#0C5013",
+          "#27732B",
+          "#509551",
+          "#7BB67B",
+          "#A6D9A5",
+          "#D2FCD1"
+        ]
+      },
+      "pencil-green-wash": {
+        "role": "secondary",
+        "displayName": "Pencil Green Wash",
+        "canonical": "#DDEBDD",
+        "tonalRamp": [
+          "#0A0C0A",
+          "#232623",
+          "#3F433F",
+          "#5D635D",
+          "#7D857D",
+          "#9EA89E",
+          "#C1CDC1",
+          "#E5F3E5"
+        ]
+      },
+      "red-pencil": {
+        "role": "tertiary",
+        "displayName": "Red Pencil",
+        "canonical": "#C62828",
+        "tonalRamp": [
+          "#2B0000",
+          "#550000",
+          "#820006",
+          "#B21C1F",
+          "#D94B44",
+          "#F77A6F",
+          "#FFA79B",
+          "#FFD4C9"
+        ]
+      },
+      "red-pencil-deep": {
+        "role": "tertiary",
+        "displayName": "Red Pencil Deep",
+        "canonical": "#8E1F1F",
+        "tonalRamp": [
+          "#290000",
+          "#510000",
+          "#7B1215",
+          "#A03B36",
+          "#BF645C",
+          "#DC8D84",
+          "#F9B6AE",
+          "#FFE0D9"
+        ]
+      },
+      "red-pencil-wash": {
+        "role": "tertiary",
+        "displayName": "Red Pencil Wash",
+        "canonical": "#FCEFEE",
+        "tonalRamp": [
+          "#0D0B0A",
+          "#272424",
+          "#454141",
+          "#65605F",
+          "#878080",
+          "#ABA3A2",
+          "#D1C6C5",
+          "#F8EBEA"
+        ]
+      },
+      "cross-reference-blue": {
+        "role": "primary",
+        "displayName": "Cross Reference Blue",
+        "canonical": "#1E4E8C",
+        "tonalRamp": [
+          "#00072B",
+          "#002351",
+          "#14417A",
+          "#36629D",
+          "#5D84B9",
+          "#86A7D5",
+          "#AFCBF2",
+          "#DAF1FF"
+        ]
+      },
+      "cross-reference-wash": {
+        "role": "primary",
+        "displayName": "Cross Reference Wash",
+        "canonical": "#DCE5F2",
+        "tonalRamp": [
+          "#0A0B0D",
+          "#232528",
+          "#3F4246",
+          "#5D6267",
+          "#7D838A",
+          "#9FA6AF",
+          "#C2CAD5",
+          "#E6EFFC"
+        ]
+      },
+      "chart-umber": {
+        "role": "chart",
+        "displayName": "Chart Umber",
+        "canonical": "#7A5C2E",
+        "tonalRamp": [
+          "#160800",
+          "#342100",
+          "#553D15",
+          "#795B2D",
+          "#997D56",
+          "#B9A17E",
+          "#DBC6A8",
+          "#FDECD4"
+        ]
+      },
+      "chart-ochre": {
+        "role": "chart",
+        "displayName": "Chart Ochre",
+        "canonical": "#B08A3E",
+        "tonalRamp": [
+          "#140800",
+          "#332100",
+          "#553E09",
+          "#795C1F",
+          "#A07C35",
+          "#C39F5B",
+          "#E4C58A",
+          "#FFEBB9"
+        ]
+      },
+      "chart-plum": {
+        "role": "chart",
+        "displayName": "Chart Plum",
+        "canonical": "#8E5A9C",
+        "tonalRamp": [
+          "#16021C",
+          "#35163D",
+          "#573061",
+          "#7B4B88",
+          "#9E6DAB",
+          "#BE92CA",
+          "#E0B9EA",
+          "#FFE2FF"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Working-paper title, one per page."
+      },
+      "lead-figure": {
+        "displayName": "Lead Figure",
+        "purpose": "The one number that owns a panel."
+      },
+      "tally-figure": {
+        "displayName": "Tally Figure",
+        "purpose": "Counts in the tally strip."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Sheet headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Sub-headings inside a sheet."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, schedule cells, fact lists."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase table and weekday column headers only."
+      },
+      "mono-reference": {
+        "displayName": "Mono Reference",
+        "purpose": "Working-paper meta block."
+      },
+      "mono-mark": {
+        "displayName": "Mono Mark",
+        "purpose": "Query labels, RHP references, calendar day numbers, reviewer stamp."
+      }
+    },
+    "shadows": [
+      {
+        "name": "paper-contact",
+        "value": "0 1px 2px rgba(43,47,42,.05)",
+        "purpose": "Sheets only."
+      },
+      {
+        "name": "inset-outline",
+        "value": "inset 0 0 0 1.5px #2B2F2A",
+        "purpose": "Last-day calendar chip."
+      }
+    ],
+    "motion": [
+      {
+        "name": "draw-tick",
+        "value": "stroke-dashoffset 24 to 0, .55s cubic-bezier(.16,1,.3,1)",
+        "purpose": "Tick drawn once over a cleared query; none under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      }
+    ],
+    "platform": {
+      "framework": "Streamlit",
+      "themeFile": ".streamlit/config.toml",
+      "cssInjection": "st.html (st.markdown curls quotes inside CSS)",
+      "sheetHooks": [
+        "st-key-sheet-*",
+        "st-key-signoff"
+      ],
+      "notes": [
+        "Every control is a standard Streamlit widget.",
+        "Streamlit strips CSS-generated text; no ::before/::after content.",
+        "Fonts self-hosted via static serving: Public Sans 100-900, JetBrains Mono 100-800.",
+        "Theme baseRadius and buttonRadius small; baseFontSize 15; chartCategoricalColors mirror ipodesk.subscription.COLORS."
+      ]
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Streamlit primary button: the single cross-reference-blue action on a sheet; disabled with a lock until sign-off.",
+      "html": "<button class=\"ds-btn-primary\">Run AI extraction</button> <button class=\"ds-btn-primary\" disabled>Download note (PDF)</button>",
+      "css": ":host{--ink:#2B2F2A;--ground:#EEF2EC;--sheet:#FBFCFA;--rule:#CFD8CC;--tick:#2E7D32;--query:#C62828;--xref:#1E4E8C;--muted:#5B6458;font-family:'Public Sans',sans-serif;color:var(--ink);} .ds-btn-primary{background:var(--xref);color:#fff;border:1px solid var(--xref);border-radius:4px;padding:.45rem 1rem;font:600 15px 'Public Sans',sans-serif;cursor:pointer;transition:background .15s;} .ds-btn-primary:hover{background:#14417A;} .ds-btn-primary:focus-visible{outline:2px solid var(--xref);outline-offset:2px;} .ds-btn-primary:disabled{background:#E3E9E0;border-color:#CFD8CC;color:#5B6458;cursor:not-allowed;}"
+    },
+    {
+      "name": "Shell Navigation",
+      "kind": "nav",
+      "refersTo": "shell-bar",
+      "description": "Graphite top bar with the product mark and module links; current page on a shell-active plate.",
+      "html": "<nav class=\"ds-shell\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 32 32\"><rect x=\"3\" y=\"3\" width=\"26\" height=\"26\" rx=\"4\" fill=\"none\" stroke=\"#C9D2C6\" stroke-width=\"2\"/><path d=\"M8 11h9M8 16h6M8 21h5\" stroke=\"#7C8779\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M15.5 18.5 19.2 22.2 26.5 12\" fill=\"none\" stroke=\"#8CC08A\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg><a href=\"#\">Overview</a><a href=\"#\" aria-current=\"page\">Note Generator</a><a href=\"#\">IPO Calendar</a><a href=\"#\">Subscription Tracker</a></nav>",
+      "css": ":host{--ink:#2B2F2A;--ground:#EEF2EC;--sheet:#FBFCFA;--rule:#CFD8CC;--tick:#2E7D32;--query:#C62828;--xref:#1E4E8C;--muted:#5B6458;font-family:'Public Sans',sans-serif;color:var(--ink);} .ds-shell{display:flex;align-items:center;gap:.4rem;height:3.5rem;padding:0 1rem;background:var(--ink);} .ds-shell svg{margin-right:.8rem;} .ds-shell a{color:#C9D2C6;text-decoration:none;font-size:.9rem;padding:.3rem .55rem;border-radius:4px;} .ds-shell a:hover{color:#fff;} .ds-shell a[aria-current=page]{background:#3D4339;color:#fff;} .ds-shell a:focus-visible{outline:2px solid #86A7D5;outline-offset:2px;}"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "",
+      "description": "Standard Streamlit text input on the world theme: sage wash, hairline, blue focus.",
+      "html": "<label class=\"ds-field\">Reviewed by<input class=\"ds-input\" placeholder=\"Your full name\"></label>",
+      "css": ":host{--ink:#2B2F2A;--ground:#EEF2EC;--sheet:#FBFCFA;--rule:#CFD8CC;--tick:#2E7D32;--query:#C62828;--xref:#1E4E8C;--muted:#5B6458;font-family:'Public Sans',sans-serif;color:var(--ink);} .ds-field{display:flex;flex-direction:column;gap:.35rem;font-size:.9rem;} .ds-input{background:#E3E9E0;border:1px solid #CFD8CC;border-radius:4px;padding:.55rem .75rem;font:15px 'Public Sans',sans-serif;color:var(--ink);caret-color:var(--xref);} .ds-input:hover{border-color:#9AA796;} .ds-input:focus-visible{outline:2px solid var(--xref);outline-offset:2px;}"
+    },
+    {
+      "name": "Sheet",
+      "kind": "card",
+      "refersTo": "sheet",
+      "description": "Keyed container (st-key-sheet-*): near-white paper with a sage hairline and contact shadow, here holding a lead figure.",
+      "html": "<section class=\"ds-sheet\"><h2>P/E at upper band</h2><div class=\"ds-big\">30.0x</div><p>Peer median 22.1x · computed in Python</p></section>",
+      "css": ":host{--ink:#2B2F2A;--ground:#EEF2EC;--sheet:#FBFCFA;--rule:#CFD8CC;--tick:#2E7D32;--query:#C62828;--xref:#1E4E8C;--muted:#5B6458;font-family:'Public Sans',sans-serif;color:var(--ink);} .ds-sheet{background:var(--sheet);border:1px solid var(--rule);border-radius:8px;padding:1.25rem 1.5rem 1.4rem;box-shadow:0 1px 2px rgba(43,47,42,.05);} .ds-sheet h2{font-size:1.15rem;font-weight:700;margin:0 0 .1rem;letter-spacing:-.01em;} .ds-big{font-size:3rem;font-weight:700;line-height:1.05;font-variant-numeric:tabular-nums;} .ds-sheet p{margin:.2rem 0 0;color:var(--muted);font-size:.9rem;}"
+    },
+    {
+      "name": "Working-Paper Header",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "Title and purpose left, mono reference block right, 2px graphite rule below.",
+      "html": "<header class=\"ds-wp\"><div><h1>Aarna Sutra Foods Limited (Sample)</h1><p>Every figure is ticked to its RHP page before a reviewer signs off.</p></div><div class=\"ds-meta\">W/P REF N-B68E28<br>SOURCE RHP · 15 PP<br>INFORMATION ONLY · NOT A RECOMMENDATION</div></header>",
+      "css": ":host{--ink:#2B2F2A;--ground:#EEF2EC;--sheet:#FBFCFA;--rule:#CFD8CC;--tick:#2E7D32;--query:#C62828;--xref:#1E4E8C;--muted:#5B6458;font-family:'Public Sans',sans-serif;color:var(--ink);} .ds-wp{display:flex;justify-content:space-between;align-items:flex-end;gap:1.5rem;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:.9rem;} .ds-wp h1{font-size:1.85rem;font-weight:700;line-height:1.15;letter-spacing:-.01em;margin:0;} .ds-wp p{margin:.3rem 0 0;color:var(--muted);font-size:.95rem;max-width:68ch;} .ds-meta{font:500 .78rem/1.75 'JetBrains Mono',monospace;color:var(--muted);text-align:right;letter-spacing:.02em;}"
+    },
+    {
+      "name": "Pencil Marks",
+      "kind": "chip",
+      "refersTo": "query-mark",
+      "description": "The signature: tick, re-reference, numbered query, cleared query, cross-reference.",
+      "html": "<div class=\"ds-marks\"><span>820.40<svg width=\"15\" height=\"15\" viewBox=\"0 0 16 16\" aria-label=\"ticked to source\" role=\"img\"><path d=\"M2.4 8.9 6.1 12.4 13.8 3.3\" fill=\"none\" stroke=\"#2E7D32\" stroke-width=\"2.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span><span>Elsewhere<svg width=\"15\" height=\"15\" viewBox=\"0 0 16 16\" aria-label=\"page re-referenced\" role=\"img\"><circle cx=\"8\" cy=\"8\" r=\"6.6\" fill=\"none\" stroke=\"#1E4E8C\" stroke-width=\"1.3\" stroke-dasharray=\"2.2 1.8\"/><path d=\"M4.8 8.3 7.1 10.5 11.4 5.6\" fill=\"none\" stroke=\"#1E4E8C\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span><span>118.80<span class=\"ds-q\">Q1</span></span><span class=\"ds-q ds-cleared\">Q1</span><span class=\"ds-xref\">RHP/106</span></div>",
+      "css": ":host{--ink:#2B2F2A;--ground:#EEF2EC;--sheet:#FBFCFA;--rule:#CFD8CC;--tick:#2E7D32;--query:#C62828;--xref:#1E4E8C;--muted:#5B6458;font-family:'Public Sans',sans-serif;color:var(--ink);} .ds-marks{display:flex;gap:1.2rem;align-items:center;font-variant-numeric:tabular-nums;} .ds-marks svg{vertical-align:-2px;margin-left:.35rem;} .ds-q{display:inline-flex;align-items:center;font:600 .72rem/1 'JetBrains Mono',monospace;color:var(--query);border:1.5px solid var(--query);border-radius:4px;padding:.12rem .3rem;margin-left:.35rem;} .ds-q.ds-cleared{color:var(--tick);border-color:var(--tick);} .ds-xref{font:600 .8rem 'JetBrains Mono',monospace;color:var(--xref);text-decoration:underline;text-underline-offset:3px;}"
+    },
+    {
+      "name": "Tally Strip",
+      "kind": "custom",
+      "refersTo": "tally-strip",
+      "description": "Three counts with their marks; open queries turn red when non-zero.",
+      "html": "<div class=\"ds-tally\"><div><span>Ticked to source</span><b>45<svg width=\"15\" height=\"15\" viewBox=\"0 0 16 16\" aria-label=\"ticked to source\" role=\"img\"><path d=\"M2.4 8.9 6.1 12.4 13.8 3.3\" fill=\"none\" stroke=\"#2E7D32\" stroke-width=\"2.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></b></div><div><span>On another page</span><b>0<svg width=\"15\" height=\"15\" viewBox=\"0 0 16 16\" aria-label=\"page re-referenced\" role=\"img\"><circle cx=\"8\" cy=\"8\" r=\"6.6\" fill=\"none\" stroke=\"#1E4E8C\" stroke-width=\"1.3\" stroke-dasharray=\"2.2 1.8\"/><path d=\"M4.8 8.3 7.1 10.5 11.4 5.6\" fill=\"none\" stroke=\"#1E4E8C\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></b></div><div class=\"ds-red\"><span>Open queries</span><b>1</b></div></div>",
+      "css": ":host{--ink:#2B2F2A;--ground:#EEF2EC;--sheet:#FBFCFA;--rule:#CFD8CC;--tick:#2E7D32;--query:#C62828;--xref:#1E4E8C;--muted:#5B6458;font-family:'Public Sans',sans-serif;color:var(--ink);} .ds-tally{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--rule);border-radius:6px;background:#fff;} .ds-tally>div{padding:.7rem 1rem;border-left:1px solid var(--rule);} .ds-tally>div:first-child{border-left:0;} .ds-tally span{display:block;font-size:.8rem;font-weight:600;color:var(--muted);} .ds-tally b{display:flex;align-items:center;gap:.45rem;font-size:1.7rem;font-weight:700;line-height:1.2;font-variant-numeric:tabular-nums;} .ds-red b{color:var(--query);}"
+    },
+    {
+      "name": "Steps",
+      "kind": "chip",
+      "refersTo": "step",
+      "description": "The note's sequence: done in green wash with a tick, current outlined in graphite, pending in sage wash.",
+      "html": "<div class=\"ds-steps\"><span class=\"ds-done\">Source</span><span class=\"ds-done\">Sections</span><span class=\"ds-on\">Review</span><span>Sign-off</span></div>",
+      "css": ":host{--ink:#2B2F2A;--ground:#EEF2EC;--sheet:#FBFCFA;--rule:#CFD8CC;--tick:#2E7D32;--query:#C62828;--xref:#1E4E8C;--muted:#5B6458;font-family:'Public Sans',sans-serif;color:var(--ink);} .ds-steps{display:flex;gap:.4rem;flex-wrap:wrap;} .ds-steps span{font-size:.82rem;font-weight:600;padding:.3rem .7rem;border-radius:4px;background:#E3E9E0;color:var(--muted);border:1.5px solid transparent;} .ds-steps .ds-done{background:#DDEBDD;color:#23602A;} .ds-steps .ds-on{background:#fff;color:var(--ink);border-color:var(--ink);}"
+    },
+    {
+      "name": "Reviewer Sign-off",
+      "kind": "card",
+      "refersTo": "signoff-box",
+      "description": "Dashed sign-off box (st-key-signoff) holding the reviewer name, query clearing and the locked export.",
+      "html": "<section class=\"ds-signoff\"><h2>Reviewer sign-off</h2><label><input type=\"checkbox\"> Clear Q1: checked against the RHP</label><button disabled>Download note (PDF)</button></section>",
+      "css": ":host{--ink:#2B2F2A;--ground:#EEF2EC;--sheet:#FBFCFA;--rule:#CFD8CC;--tick:#2E7D32;--query:#C62828;--xref:#1E4E8C;--muted:#5B6458;font-family:'Public Sans',sans-serif;color:var(--ink);} .ds-signoff{background:#fff;border:1.5px dashed #9AA796;border-radius:8px;padding:1rem 1.1rem;display:flex;flex-direction:column;gap:.7rem;} .ds-signoff h2{font-size:1.15rem;font-weight:700;margin:0;} .ds-signoff label{font-size:.9rem;} .ds-signoff button{background:#E3E9E0;color:#5B6458;border:1px solid #CFD8CC;border-radius:4px;padding:.45rem;font:600 15px 'Public Sans',sans-serif;}"
+    },
+    {
+      "name": "Calendar Event Chips",
+      "kind": "chip",
+      "refersTo": "event-opens",
+      "description": "Event chips from the world's own inks; the last day is outlined in graphite, never red.",
+      "html": "<div class=\"ds-evs\"><span class=\"ds-ev ds-opens\">Opens</span><span class=\"ds-ev ds-last\">Last day</span><span class=\"ds-ev ds-allot\">Allotment</span><span class=\"ds-ev ds-refund\">Refund</span><span class=\"ds-ev ds-listing\">Listing</span></div>",
+      "css": ":host{--ink:#2B2F2A;--ground:#EEF2EC;--sheet:#FBFCFA;--rule:#CFD8CC;--tick:#2E7D32;--query:#C62828;--xref:#1E4E8C;--muted:#5B6458;font-family:'Public Sans',sans-serif;color:var(--ink);} .ds-evs{display:flex;gap:.4rem;} .ds-ev{display:inline-block;border-radius:3px;padding:.1rem .3rem;font-size:.78rem;font-weight:500;color:var(--ink);line-height:1.3;} .ds-opens{background:#DDEBDD;} .ds-last{background:#fff;box-shadow:inset 0 0 0 1.5px var(--ink);} .ds-allot{background:#DCE5F2;} .ds-refund{background:#E3E9E0;} .ds-listing{background:var(--ink);color:#fff;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Working Papers",
+    "overview": "The app reads like an auditor's working paper. A pale grey-green analysis ground holds near-white sheets edged in sage hairlines; a graphite shell bar carries the module navigation and the product mark. Every figure the model returns is vouched for in pencil: a green tick when it is found on the RHP page it cites, a blue cross-reference to that page, and a numbered red query when it cannot be found. An open query blocks sign-off until a reviewer clears it, and the clearing is drawn as a tick over the query box.\n\nDensity is that of a schedule, not a dashboard: hairline-ruled tables with tabular numerals, one lead figure per panel, compact fact lists, a single tally strip. Colour is ink on paper. Green, red and blue are pencil colours with fixed meanings; everything else is graphite and sage. The world refuses the white KPI-card fintech dashboard with a blue accent and pill badges.\n\nThe world lives inside Streamlit. Every control is a standard Streamlit widget themed through `.streamlit/config.toml`; the world supplies type, palette, density and the authored SVG marks through one CSS block injected with `st.html` (never `st.markdown`, which curls the quotes inside CSS). Sheets are keyed containers (`st-key-sheet-*`, `st-key-signoff`). Streamlit strips CSS-generated text, so no copy, label or glyph may come from `::before`/`::after` content.",
+    "keyCharacteristics": [
+      "Graphite shell bar, grey-green ground, near-white hairline sheets.",
+      "Pencil marks with fixed meanings: green tick (found), blue cross-reference (page), red numbered query (not found).",
+      "Working-paper header: title and one-line purpose left, mono reference block right, 2px graphite rule below.",
+      "Public Sans for all UI; JetBrains Mono only for references, codes and dates.",
+      "Tabular numerals on every figure; schedules ruled, not carded."
+    ],
+    "rules": [
+      {
+        "name": "The Pencil Meaning Rule",
+        "body": "Green means found, red means not found or flagged, blue means a reference, an action, or today's place on the calendar. A pencil colour is never used for decoration or for a meaning it does not carry.",
+        "section": "colors"
+      },
+      {
+        "name": "The Red Is For Queries Rule",
+        "body": "Red marks only open queries and red flags. Deadlines are not queries: the calendar's last day is outlined in graphite, never red.",
+        "section": "colors"
+      },
+      {
+        "name": "The Clerk's Hand Rule",
+        "body": "JetBrains Mono is for references, codes and dates. Prose, headings and figures are Public Sans. The one exception is a copy-ready client message shown in a Streamlit code block, which is Streamlit's copy affordance.",
+        "section": "typography"
+      },
+      {
+        "name": "The Heading Is The Label Rule",
+        "body": "Sections are named by weight and size alone. No kicker or eyebrow sits above a heading.",
+        "section": "typography"
+      },
+      {
+        "name": "The Paper On A Desk Rule",
+        "body": "Surfaces are flat. Nothing lifts on hover; a sheet's only shadow is its contact shadow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** vouch for every model-returned figure with a mark: tick, re-reference or numbered query.",
+      "**Do** draw marks as authored inline SVG in the pencil colours.",
+      "**Do** keep cross-reference blue as the single action colour, with one primary button per sheet at most.",
+      "**Do** set every figure in tabular numerals and right-align numeric columns.",
+      "**Do** open every page with the working-paper header and close it with the compliance footer.",
+      "**Do** carry sheet styling on keyed containers (`st-key-sheet-*`, `st-key-signoff`) and inject the world CSS with `st.html`.",
+      "**Do** keep every control a standard Streamlit widget."
+    ],
+    "donts": [
+      "**Don't** build white KPI cards with a blue accent and pill badges.",
+      "**Don't** use red for anything but open queries and red flags; outline deadlines in graphite.",
+      "**Don't** set prose, headings or figures in JetBrains Mono (copy-ready messages in code blocks excepted).",
+      "**Don't** put a kicker or eyebrow label above a heading.",
+      "**Don't** generate text, labels or glyphs with CSS `content`; Streamlit strips it.",
+      "**Don't** inject the world CSS with `st.markdown`; it curls the quotes.",
+      "**Don't** let the chart-only umber, ochre or plum leave the charts."
+    ]
+  }
+}
