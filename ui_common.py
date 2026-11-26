@@ -176,11 +176,23 @@ table.sched tr.due td {{ background: #EAF0F8; }}
 def load_secrets_into_env() -> None:
     """Copy known keys from Streamlit secrets into environment variables (the ipodesk package reads env)."""
     try:
-        for key in SECRET_KEYS:
-            if key in st.secrets and not os.getenv(key):
-                os.environ[key] = str(st.secrets[key])
-    except Exception:  # no secrets file locally is fine
-        pass
+        secrets = st.secrets.to_dict()
+    except Exception as exc:
+        # Streamlit raises the same error type for "no secrets file" (normal locally, where .env is used)
+        # and for a TOML typo in the Secrets box, so tell them apart by the message.
+        if "pars" in str(exc).lower():
+            st.warning("Streamlit Secrets could not be read: the format is invalid. Each line must look like "
+                       'GEMINI_API_KEY = "your-key" (with the quotes).')
+        return
+    # Accept keys at the top level or one level down (pasted under a [section] heading by mistake).
+    flat = {k: v for k, v in secrets.items() if not isinstance(v, dict)}
+    for section in (v for v in secrets.values() if isinstance(v, dict)):
+        for k, v in section.items():
+            flat.setdefault(k, v)
+    for key in SECRET_KEYS:
+        value = str(flat.get(key, "")).strip()
+        if value and not os.getenv(key):
+            os.environ[key] = value
 
 
 def apply_theme() -> None:
